@@ -18,4 +18,14 @@ class TestCell < Cell::ViewModel
     @foo = 'bar'
     render
   end
+
+  def link_to_normal
+    @article = Article.first
+    render
+  end
+
+  def link_to_with_block1
+    @article = Article.first
+    render
+  end
 end
